@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { FocusTimer } from "./components/FocusTimer";
+import  FocusTimer  from "./components/FocusTimer";
 import './App.css'
 
 function App() {
