@@ -7,5 +7,8 @@ const PRESETS = [
     {label: "25 sec (demo)", seconds: 1500},
 ]
 export default function FocusTimer(){
-    
+    const [duration, setDuration ] = useState(1500);
+    const [ secondsLeft, setSecondsLeft] =useState(1500);
+    const [isRunning, setIsRunning] =useState(false);
+    const [log, setLog] = useState
 }
