@@ -3,6 +3,7 @@ export function TimerDisplay({ secondsLeft, duration, status }) {
     const seconds = secondsLeft % 60;
     const progress = duration > 0 ? ((duration - secondsLeft) / duration) * 100 : 0;
 
+    
     return (
         <div className="text-center">
             <div className="text-5xl font-mono font-bold">
