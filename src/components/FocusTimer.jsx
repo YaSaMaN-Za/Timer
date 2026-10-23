@@ -43,20 +43,20 @@ export default function FocusTimer() {
     }
 
     return (
-        <section className="mx-auto max-w-md rounded-xl border bg-white p-6 shadow-sm">
-            <h2 className="mb-4 text-xl font-bold">Focus Timer</h2>
+        <section className="mx-auto max-w-md rounded-xl border bg-slate-200 p-6 shadow-sm">
+            <h2 className="mb-4 text-xl font-bold ">Focus Timer</h2>
             <div className="mb-4 flex gap-2">
                 {PRESETS.map((preset) => (
-                    <button key={preset.seconds} className="rounded border px-3 py-1" onClick={() => handleDurationChange(preset.seconds)} >
+                    <button key={preset.seconds} className="rounded border px-4 py-3" onClick={() => handleDurationChange(preset.seconds)} >
                         {preset.label}
                     </button>
                 ))}
             </div>
             <TimerDisplay secondsLeft={secondsLeft} duration={duration} status={status} />
             <div className="mt-4 flex justify-center gap-2">
-                <button onClick={handleStart} disabled={isActive || isFinished} className="rounded border px-4 py-1 bg-indigo-600 text-white disabled:opacity-50">Start</button>
-                <button onClick={handlePause} disabled={!isActive} className="rounded border px-4 py-1 disabled:opacity-50">Pause</button>
-                <button onClick={handleReset} className="rounded border px-4 py-1">Reset</button>
+                <button onClick={handleStart} disabled={isActive || isFinished} className="rounded border px-4 py-3 bg-indigo-400 text-white disabled:opacity-50">Start</button>
+                <button onClick={handlePause} disabled={!isActive} className="rounded border px-4 py-3 disabled:opacity-50">Pause</button>
+                <button onClick={handleReset} className="rounded border px-4 py-3">Reset</button>
             </div>
             <ActivityLog entries={log} />
         </section>
