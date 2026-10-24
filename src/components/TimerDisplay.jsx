@@ -10,8 +10,8 @@ export function TimerDisplay({ secondsLeft, duration, status }) {
                 {String(minutes).padStart(2, "0")}:{String(seconds).padStart(2, "0")}
             </div>
             <div className="mt-2 text-sm text-gray-500">{status}</div>
-            <div className="mt-4 h-2 w-full rounded bg-gray-200">
-                <div className="h-2 rounded bg-indigo-600 transition-all" style={{ width: progress + "% "}} />
+            <div className="mt-4 h-4 w-full rounded bg-gray-200">
+                <div className="h-4 rounded bg-indigo-300 transition-all" style={{ width: progress + "% "}} />
             </div>
         </div>
     );
